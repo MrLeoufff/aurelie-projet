@@ -4,8 +4,8 @@
     <div class="topnav">
       <a href=index.php aria-label="Accueil">Accueil</a>
       <a class="active"href="quiSommesNous?" aria-label="qui sommes-nous ?">Qui sommes-nous?</a>
-      <a href="carte.php" aria-label="Nous contacter">Contact</a>
-      <a href="lien.php" aria-label="Créer un rendez-vous">Créer un rendez-vous</a>
+      <a href="contact.php" aria-label="Nous contacter">Contact</a>
+      <a href="rdv.php" aria-label="Créer un rendez-vous">Créer un rendez-vous</a>
       <a href="planningmedecin.php" aria-label="Voir le planning du médecin">Planning</a>
       <a href="centre.php" aria-label="Voir la liste des centres disponibles">Liste des centres</a>
     </div>
@@ -95,8 +95,5 @@
       Elle concourt au diagnostic, au dépistage, à l’évaluation des risques, au suivi des patients, etc.
     </p>
 
-
-
-
-
-  </div>
+<?php include 'includes/footer.php';?>
+</div>

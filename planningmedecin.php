@@ -1,26 +1,13 @@
-<html>
-
-<head>
-    <title>Fullcalendar</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
-</head>
-
-<body>
-<div class="container">   
+<?php include 'includes/header.php';?>
+<div class="container">
     <div class="topnav">
-    <a href=Accueil.php aria-label="Accueil">Accueil</a>
+    <a href=index.php aria-label="Accueil">Accueil</a>
         <a href="quiSommesNous.php" aria-label="Qui sommes-nous ?">Qui sommes-nous?</a>
         <a href="carte.php" aria-label="Nous contacter">Contact</a>
         <a href="lien.php" aria-label="Créer un rendez-vous">Créer un rendez-vous</a>
         <a class="active "href="planningmedecin.php" aria-label="Voir le planning du médecin">Planning</a>
         <a href="centre.php" aria-label="Voir la liste des centres disponibles">Liste des centres</a>
     </div>
-</div> 
-        </div>
     <h2>
         <center>Javascript Fullcalendar</center>
     </h2>
@@ -36,16 +23,16 @@
         $('#calendar').fullCalendar({
         selectable: true,
         selectHelper: true,
-        select: function () 
+        select: function ()
         {
             $('#myModal').modal('toggle');
         },
 
-        header: 
+        header:
         {
             left: 'month, agendaWeek, agendaDay, list',
             center:'title',
-            right:'prev, today , next', 
+            right:'prev, today , next',
         },
         buttonText:
         {
@@ -92,9 +79,9 @@
                 }
                 else if (newdate =='20-02-2023')
                 {
-                    cell.css("background",'red') 
+                    cell.css("background",'red')
                 }
-                
+
             },
         });
      });
@@ -118,7 +105,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
 </div>

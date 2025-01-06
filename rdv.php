@@ -78,7 +78,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && hash_equals($_SESSION['csrf_token']
     <div class="container mt-5">
     <div class="topnav">
             <a href="index.php" aria-label="Accueil">Accueil</a>
-            <a href="inscription.php" aria-label="Inscription">Inscription</a>
             <a href="quiSommesNous.php" aria-label="Qui sommes-nous ?">Qui sommes-nous?</a>
             <a href="carte.php" aria-label="Nous contacter">Contact</a>
             <a class="active" href="lien.php" aria-label="Créer un rendez-vous">Créer un rendez-vous</a>
