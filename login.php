@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['id_patient'] = $patient['idpatient'];
         $_SESSION['utilisateur'] = $patient['login']; // Pour afficher le nom de l'utilisateur
         $_SESSION['csrf_token'] = bin2hex(random_bytes(32)); // Ajout d'un token CSRF pour sécuriser
-        header("Location: lien.php"); // Redirection vers la page de prise de rendez-vous
+        header("Location: index.php"); // Redirection vers la page de prise de rendez-vous
         exit();
     } else {
         $_SESSION['message_error'] = "Identifiants incorrects.";

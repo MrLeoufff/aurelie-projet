@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && hash_equals($_SESSION['csrf_token']
 
             if ($stmt->execute()) {
                 $_SESSION['message_success'] = "Le rendez-vous a été enregistré avec succès.";
-                header("Location: lien.php");
+                header("Location: index.php");
                 exit();
             } else {
                 echo "<div class='alert alert-danger'>Erreur lors de l'enregistrement du rendez-vous.</div>";

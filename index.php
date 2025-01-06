@@ -94,5 +94,5 @@ include 'includes/header.php';
     </div>
 
 
-<?php include 'includes/footer.php'; // Inclure le pied de page ?>
+<?php include 'includes/footer.php';?>
 </div>
